@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -21,6 +21,17 @@ img {
 .btn-layout {
   text-align: center;
 }
+
+/* UTILITIES */
+
+.py-40{
+  margin-top: 40px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
 /* COLONNE */
 .col-30 {
   width: 30%;
@@ -33,6 +44,7 @@ img {
 .col-orizz {
   width: 100%;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .col-space {
@@ -113,6 +125,15 @@ img {
   margin-bottom: 40px;
 }
 
+.btn-card-2 {
+  background-color: #0061fe;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 40px;
+}
+
 .card-divider {
   width: 50px;
   margin-top: 40px;
@@ -124,9 +145,13 @@ img {
 .card-highlights {
   margin-top: 25px;
   display: flex;
-  align-items: flex-start;
   gap: 10px;
   margin-bottom: 12px;
+}
+
+.card-highlights-2 {
+  display: flex;
+  gap: 10px;
 }
 
 .card-highlights i {
@@ -141,7 +166,7 @@ img {
 
 .card-enterprise {
   text-align: start;
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
   justify-content: space-between;
 }
 
@@ -156,13 +181,23 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.header a:hover {
+  border-bottom: 1px solid black;
 }
 
 .left-header,
 .right-header {
   display: flex;
   gap: 30px;
-  max-width: 50%;
 }
 
 .ul-header li {
@@ -196,10 +231,10 @@ img {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 900;
   line-height: 60px;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
 .business-plan {
@@ -249,13 +284,6 @@ h1 {
   font-size: 2rem;
 }
 
-.circle-button {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 20px;
-}
-
 .partner {
   width: 650px;
 }
@@ -282,12 +310,15 @@ h1 {
 
 /* FOOTER */
 
+.bg-footer {
+  background-color: black;
+}
+
 .footer {
   display: flex;
   justify-content: center;
   padding: 80px 0px 50px 0px;
   gap: 150px;
-  background-color: black;
 }
 
 .title-footer {
